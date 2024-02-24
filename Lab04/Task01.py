@@ -1,8 +1,8 @@
-from environment import Environment
-from environment import Room
-from agent import VaccumAgent
+from com_environment import Environment
+from com_environment import Room
+from com_agent import VaccumAgent
 
-class TwoRoomVaccumCleanerEnvironment(Environment.Environment):
+class TwoRoomVaccumCleanerEnvironment(Environment):
     ''' 
     Class representing a two-room vacuum cleaner environment.
     '''
@@ -10,8 +10,8 @@ class TwoRoomVaccumCleanerEnvironment(Environment.Environment):
         '''
         Constructor
         '''
-        self.r1 = Room.Room('A', 'dirty')
-        self.r2 = Room.Room('B', 'dirty')
+        self.r1 = Room('A', 'dirty')
+        self.r2 = Room('B', 'dirty')
         self.agent = agent
         self.currentRoom = self.r1
         self.delay = 1000
