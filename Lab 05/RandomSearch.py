@@ -13,13 +13,13 @@ def random_explore(graph, start_node, max_steps):
         steps += 1
 
 # Example usage:
-graph = {
-    'A': ['B', 'C'],
-    'B': ['D', 'E'],
-    'C': ['F'],
-    'D': [],
-    'E': [],
-    'F': []
-}
+# graph = {
+#     'A': ['B', 'C'],
+#     'B': ['D', 'E'],
+#     'C': ['F'],
+#     'D': [],
+#     'E': [],
+#     'F': []
+# }
 
 random_explore(graph, 'A', max_steps=5)  # Start exploring from node 'A', with maximum 5 steps
