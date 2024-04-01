@@ -6,9 +6,9 @@ class Dog(Animal):
     def speak(self):
         return "Woof!"
 
-class Cat(Animal):
-    def speak(self):
-        return "Meow!"
+# class Cat(Animal):
+#     def speak(self):
+#         return "Meow!"
 
 class Bird(Animal):
     def speak(self):
@@ -20,10 +20,10 @@ def make_animal_speak(animal):
 
 # Creating instances of different animals
 dog = Dog()
-cat = Cat()
+#cat = Cat()
 bird = Bird()
 
 # Calling the function with different types of animals
 print(make_animal_speak(dog))   # Output: Woof!
-print(make_animal_speak(cat))   # Output: Meow!
+#print(make_animal_speak(cat))   # Output: Meow!
 print(make_animal_speak(bird))  # Output: Tweet!
